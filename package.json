@@ -28,6 +28,7 @@
     "@typescript-eslint/parser": "latest",
     "@vue/compiler-sfc": "latest",
     "carbon-components-svelte": "latest",
+    "carbon-preprocess-svelte": "0.1.0-rc.2",
     "eslint": "latest",
     "jest": "latest",
     "jest-junit": "latest",

@@ -7,6 +7,7 @@ import svelte from "rollup-plugin-svelte";
 import typescript from '@rollup/plugin-typescript';
 import livereload from "rollup-plugin-livereload";
 import postcss from 'rollup-plugin-postcss';
+import { optimizeCss, optimizeImports } from "carbon-preprocess-svelte";
 
 const isProduction = process.env.ROLLUP_WATCH !== 'true';
 
@@ -24,7 +25,7 @@ export default {
     plugins: [
         svelte({
             //dev: !isProduction,
-            preprocess: preprocess({ sourceMap: !isProduction })
+            preprocess: [preprocess({ sourceMap: !isProduction }), optimizeImports(), optimizeCss()]
             //css: css => css.write('css/sample-svelte.css')
         }),
         postcss({
