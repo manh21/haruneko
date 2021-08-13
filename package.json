@@ -10,7 +10,8 @@
     "npm": ">=7.6.0"
   },
   "dependencies": {
-    "fs-extra": "latest"
+    "fs-extra": "latest",
+    "p-queue": "^7.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",

@@ -25,7 +25,8 @@ async function createApplicationManifest() {
         */
         window: {
             id: 'hakuneko',
-            show: false,
+            show: true,
+            toolbar: true,
             frame: false,
             transparent: true,
             width: 1280,
